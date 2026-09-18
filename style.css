@@ -9,3 +9,13 @@
 .real-photo:before{background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,.12) 70%)!important}
 @media(max-width:900px){.six-plans{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.logo>span{display:none}.logo img{width:40px;height:40px}.six-plans{grid-template-columns:1fr}}
+
+/* Language selector + Hindi support */
+.lang-wrap{display:flex;align-items:center;margin-left:8px}
+.lang-wrap select{background:#171717;color:#fff;border:1px solid #333;border-radius:4px;padding:8px 10px;font-size:10px;font-weight:800;letter-spacing:.6px;outline:none;cursor:pointer}
+.lang-wrap select:focus{border-color:#ef3b2d}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+body.lang-hi, body.lang-hinglish{font-family:Inter,"Noto Sans Devanagari",Arial,sans-serif}
+body.lang-hi h1,body.lang-hi h2,body.lang-hi h3,body.lang-hi .price,body.lang-hi .trainer-photo,body.lang-hinglish h1,body.lang-hinglish h2,body.lang-hinglish h3,body.lang-hinglish .price,body.lang-hinglish .trainer-photo{font-family:"Barlow Condensed","Noto Sans Devanagari",Inter,sans-serif}
+@media(max-width:900px){.lang-wrap{margin-left:0}.lang-wrap select{width:100%;padding:10px}}
+@media(max-width:600px){.lang-wrap select{font-size:11px}.logo img{width:44px;height:44px}}

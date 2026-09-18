@@ -1,32 +1,21 @@
-# Universe Fitness Zone — Final Premium One Page
+# Universe Fitness Zone — Language Update
 
-This GitHub Pages-ready site includes the real UFZ assets supplied in the conversation.
+Updated static website for Universe Fitness Zone, Silvassa.
 
 ## Included
-- Real Universe Fitness Zone logo: `assets/images/universe-fitness-zone-logo.jpg`
-- Real membership-fee photo: `assets/images/membership-fees.jpg`
-- Membership plans populated from the supplied fee card:
-  - 1 Month — ₹2,000
-  - 2 Months — ₹3,500
-  - 3 Months — ₹5,000
-  - 6 Months — ₹9,000
-  - 9 Months — ₹12,000
-  - 12 Months — ₹15,000
-- Premium hero and gallery
+- English + Hindi (हिंदी) + Hinglish language selector
+- Logo embedded directly in `index.html`, so the header logo will still show even if the assets folder was missed during upload
+- Membership prices: 1/2/3/6/9/12 months
 - BMI calculator
-- Trainer section
-- Testimonials
-- Achievements/medals section
-- Scroll reveal animations and progress bar
+- Gallery, trainer, testimonial and achievement sections
 - Call, WhatsApp and Google Maps buttons
-- No payment gateway/backend required
+- Mobile responsive design
 
-## GitHub Pages
-Upload everything inside this folder to a GitHub repository, then:
-Settings → Pages → Deploy from branch → `main` → `/ (root)` → Save.
+## GitHub Pages update
+1. Open your GitHub repository.
+2. Click **Add file → Upload files**.
+3. From this ZIP, upload **index.html**, **style.css**, **script.js** and the `assets` folder.
+4. Click **Commit changes**.
+5. Wait 1–10 minutes and refresh your site.
 
-## Add future photos
-Put images in `assets/images/`. For the gallery, update the background-image URLs in `style.css` or replace the relevant gallery blocks in `index.html`.
-
-## Important
-The gallery still contains a few stock web-image URLs for visual preview. Replace them with your own gym/trainer/member/medal photos before the final public launch.
+The language selector is in the top-right of the navigation bar.
