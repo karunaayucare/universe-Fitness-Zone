@@ -1,0 +1,8 @@
+UNIVERSE FITNESS ZONE — SAMPLE PREVIEW
+
+To view the sample:
+1. Extract this ZIP.
+2. Double-click index.html.
+3. It will open in your browser as a working one-page website.
+
+Internet connection is recommended because the sample uses Google Fonts and a few web-hosted preview images.

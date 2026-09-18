@@ -1,0 +1,7 @@
+const menu=document.querySelector('.menu');const nav=document.querySelector('.nav nav');menu?.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+const progress=document.querySelector('.progress');window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h>0?(scrollY/h)*100:0)+'%';},{passive:true});
+
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const calc=document.getElementById('calcBmi');const result=document.getElementById('bmiResult');calc?.addEventListener('click',()=>{const h=parseFloat(document.getElementById('height').value);const w=parseFloat(document.getElementById('weight').value);if(!h||!w||h<50||w<10){result.textContent='Please enter a valid height and weight.';return}const bmi=w/Math.pow(h/100,2);let label=bmi<18.5?'Underweight':bmi<25?'Healthy range':bmi<30?'Overweight':'Obesity range';result.innerHTML='<strong>'+bmi.toFixed(1)+'</strong>'+label+'<br><small>For general screening only — individual health can differ.</small>';});
