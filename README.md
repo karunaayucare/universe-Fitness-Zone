@@ -23,3 +23,13 @@ The language selector is in the top-right of the navigation bar.
 ## Latest update
 - BMI unit selector now changes height input only; weight remains kg in both modes.
 - The supplied Universe Fitness Zone logo and membership-fee photo are embedded in index.html so they do not disappear when assets are not re-uploaded.
+
+PAYMENT + REVIEW UPDATE
+- UPI ID: 6352214914@ibl
+- PhonePe QR: assets/images/phonepe-scanner.jpeg
+- Pre-membership custom payment: minimum ₹500
+- Membership plan payments: ₹2,000 / ₹3,500 / ₹5,000 / ₹9,000 / ₹12,000 / ₹15,000
+- After payment, customers can share name/mobile/plan/amount/UTR on WhatsApp to +91 6352 214 914.
+- Review options: website review form (opens WhatsApp) + Google review/search link.
+- Instagram: https://www.instagram.com/ufz.silvassa?stkn=NmszNTJwNHJuOTBs
+- Static GitHub Pages cannot centrally store payment/review submissions by itself; WhatsApp is used for confirmation in this version.

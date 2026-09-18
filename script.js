@@ -21,9 +21,9 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 const translations = {
   en: {
-    nav:{home:'Home',about:'About',plans:'Plans',trainers:'Trainers',gallery:'Gallery',bmi:'BMI',contact:'Contact'},
+    nav:{home:'Home',about:'About',plans:'Plans',trainers:'Trainers',gallery:'Gallery',bmi:'BMI',payments:'Pay',reviews:'Reviews',contact:'Contact'},
     common:{scroll:'SCROLL'},
-    buttons:{call:'CALL NOW',whatsapp:'WHATSAPP',join:'JOIN NOW',callShort:'CALL',maps:'OPEN MAPS'},
+    buttons:{call:'CALL NOW',whatsapp:'WHATSAPP',join:'JOIN NOW',callShort:'CALL',maps:'OPEN MAPS',instagram:'INSTAGRAM'},
     hero:{eyebrow:'SILVASSA • STRENGTH • FITNESS • RESULTS',title:'BUILD YOUR<br><em>STRONGER</em> SELF.',lead:'Train with purpose. Push your limits. Become the strongest version of you at Universe Fitness Zone.'},
     about:{eyebrow:'ABOUT US',title:'YOUR FITNESS.<br><em>YOUR UNIVERSE.</em>',text:'Universe Fitness Zone is a dedicated space to train hard, stay consistent and work towards your personal fitness goals. Whether you are starting your journey or pushing to the next level, make every workout count.',item1:'Strength<br>Training',item2:'Fitness<br>Training',item3:'Goal<br>Focused'},
     stats:{space:'DEDICATED<br>SPACE',training:'TRAINING<br>FOCUS',goals:'FITNESS<br>GOALS',commitment:'YOUR<br>COMMITMENT'},
@@ -31,7 +31,9 @@ const translations = {
     trainers:{eyebrow:'THE TEAM',title:'MEET YOUR<br><em>TRAINERS.</em>',description:'Trainer cards are ready. Replace the placeholders with trainer names, photos and qualifications when you are ready.',photo:'TRAINER<br>PHOTO',name:'YOUR TRAINER',skill1:'Strength • Fitness • Conditioning',skill2:'Fitness • Weight Training • Guidance',skill3:'Conditioning • Goals • Progress'},
     gallery:{eyebrow:'PHOTO GALLERY',title:'SEE THE<br><em>ENERGY.</em>',description:'Your real UFZ logo and membership-fee photo are included. Add more gym, trainer, medal and member photos to assets/images as you collect them.',gym:'GYM FLOOR',training:'TRAINING',equipment:'EQUIPMENT',weights:'WEIGHTS',fees:'MEMBERSHIP FEES'},
     bmi:{eyebrow:'FREE TOOL',title:'CHECK YOUR<br><em>BMI.</em>',description:'Choose your height unit, enter your weight in kg, and instantly see your BMI zone.',unit:'UNIT',metric:'Metric (cm / kg)',imperial:'Height ft/in • Weight kg',height:'HEIGHT',weight:'WEIGHT',feet:'HEIGHT — FEET',inches:'HEIGHT — INCHES',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'kg',calculate:'CALCULATE BMI',result:'Enter your details to see your BMI zone.',disclaimer:'BMI is a screening measure, not a diagnosis. For personalised guidance, speak with a qualified health professional.',placeholderHeight:'e.g. 175',placeholderWeight:'e.g. 75'},
-    testimonials:{eyebrow:'MEMBER VOICES',title:'TRAIN. <em>GROW.</em><br>REPEAT.',description:'These are sample testimonials for the design. Replace them with real member feedback before publishing.',one:'Sample member feedback can go here once you collect a real review.',two:'Use short, genuine comments from your members to build trust.',three:'Real experiences will make this section feel personal and authentic.',member:'— MEMBER NAME'},
+    testimonials:{eyebrow:'MEMBER VOICES',title:'TRAIN. <em>GROW.</em><br>REPEAT.',description:'Review options are ready. Add real member reviews later, or let customers send their review through WhatsApp.',one:'Sample member feedback can go here once you collect a real review.',two:'Use short, genuine comments from your members to build trust.',three:'Real experiences will make this section feel personal and authentic.',member:'— MEMBER NAME'},
+    payment:{eyebrow:'PAY MEMBERSHIP',title:'JOIN UFZ.<br><em>PAY EASY.</em>',description:'Choose a membership or enter any pre-membership amount from ₹500 onwards. Pay by UPI or scan the PhonePe QR.',scanBadge:'SCAN & PAY',scanTitle:'PhonePe QR',qrHint:'Open PhonePe and scan this QR to pay.',upiLabel:'UPI ID',copy:'COPY',customBadge:'PRE-MEMBERSHIP',formTitle:'Choose Amount',name:'NAME',mobile:'MOBILE',plan:'PLAN',amount:'AMOUNT (MIN ₹500)',txn:'TRANSACTION / UTR (OPTIONAL)',namePlaceholder:'Your name',mobilePlaceholder:'Mobile number',txnPlaceholder:'Enter after payment',payNow:'PAY NOW WITH UPI',shareWhatsapp:'I HAVE PAID — SHARE ON WHATSAPP',note:'UPI payment opens your payment app. After paying, use the WhatsApp button to send your payment details to UFZ. This website does not automatically verify payments.'},
+    reviews:{eyebrow:'YOUR EXPERIENCE',modalTitle:'Share Your Review',write:'WRITE A REVIEW',google:'REVIEW ON GOOGLE',name:'NAME',rating:'RATING',text:'REVIEW',send:'SEND REVIEW ON WHATSAPP',namePlaceholder:'Your name',textPlaceholder:'Write your experience...',note:'Your review will open in WhatsApp so you can send it directly to Universe Fitness Zone.'},
     achievement:{eyebrow:'ACHIEVEMENTS',title:'HARD WORK<br>DESERVES A <em>MEDAL.</em>',description:'Showcase your members, competitions, certificates and medals here. This section is ready for your real achievements.',placeholder:'YOUR ACHIEVEMENT<br>PHOTO HERE'},
     contact:{eyebrow:'VISIT US',title:'READY TO<br><em>TRAIN?</em>',addressLabel:'ADDRESS',contactLabel:'CONTACT'},
     meta:{title:'Universe Fitness Zone | Silvassa',description:'Universe Fitness Zone — premium fitness training in Silvassa.'},
@@ -40,9 +42,9 @@ const translations = {
     whatsapp:{info:'Hi Universe Fitness Zone, I want to know more about the gym.',join1:'Hi UFZ, I want to join for 1 month.',join2:'Hi UFZ, I want to join for 2 months.',join3:'Hi UFZ, I want to join for 3 months.',join6:'Hi UFZ, I want to join for 6 months.',join9:'Hi UFZ, I want to join for 9 months.',join12:'Hi UFZ, I want to join for 12 months.'}
   },
   hi: {
-    nav:{home:'होम',about:'हमारे बारे में',plans:'प्लान',trainers:'ट्रेनर्स',gallery:'गैलरी',bmi:'BMI',contact:'संपर्क'},
+    nav:{home:'होम',about:'हमारे बारे में',plans:'प्लान',trainers:'ट्रेनर्स',gallery:'गैलरी',bmi:'BMI',payments:'पेमेंट',reviews:'रिव्यू',contact:'संपर्क'},
     common:{scroll:'स्क्रॉल'},
-    buttons:{call:'अभी कॉल करें',whatsapp:'व्हाट्सऐप',join:'जॉइन करें',callShort:'कॉल',maps:'मैप खोलें'},
+    buttons:{call:'अभी कॉल करें',whatsapp:'व्हाट्सऐप',join:'जॉइन करें',callShort:'कॉल',maps:'मैप खोलें',instagram:'इंस्टाग्राम'},
     hero:{eyebrow:'सिलवासा • स्ट्रेंथ • फिटनेस • रिज़ल्ट',title:'अपना <br><em>मज़बूत</em> रूप बनाएं।',lead:'सही तरीके से ट्रेन करें, अपनी सीमाओं को पुश करें और Universe Fitness Zone में अपना सबसे मजबूत रूप बनाएं।'},
     about:{eyebrow:'हमारे बारे में',title:'आपकी फिटनेस।<br><em>आपकी दुनिया।</em>',text:'Universe Fitness Zone एक dedicated fitness space है जहाँ आप नियमित ट्रेनिंग करके अपने फिटनेस goals की ओर बढ़ सकते हैं। शुरुआत कर रहे हों या अगले लेवल पर जा रहे हों—हर workout को meaningful बनाएं।',item1:'स्ट्रेंथ<br>ट्रेनिंग',item2:'फिटनेस<br>ट्रेनिंग',item3:'लक्ष्य<br>केंद्रित'},
     stats:{space:'समर्पित<br>स्पेस',training:'ट्रेनिंग<br>फोकस',goals:'फिटनेस<br>लक्ष्य',commitment:'आपका<br>कमिटमेंट'},
@@ -50,7 +52,9 @@ const translations = {
     trainers:{eyebrow:'हमारी टीम',title:'अपने <br><em>ट्रेनर्स से मिलें।</em>',description:'ट्रेनर कार्ड तैयार हैं। बाद में इनके नाम, फोटो और qualifications डाल सकते हैं।',photo:'ट्रेनर<br>फोटो',name:'आपके ट्रेनर',skill1:'स्ट्रेंथ • फिटनेस • कंडीशनिंग',skill2:'फिटनेस • वेट ट्रेनिंग • गाइडेंस',skill3:'कंडीशनिंग • गोल्स • प्रोग्रेस'},
     gallery:{eyebrow:'फोटो गैलरी',title:'यहाँ की <br><em>एनर्जी देखें।</em>',description:'आपका असली UFZ लोगो और membership-fee photo शामिल है। आगे gym, trainer, medal और member photos assets/images में जोड़ सकते हैं।',gym:'जिम फ्लोर',training:'ट्रेनिंग',equipment:'इक्विपमेंट',weights:'वेट्स',fees:'मेंबरशिप फीस'},
     bmi:{eyebrow:'फ्री टूल',title:'अपना <br><em>BMI देखें।</em>',description:'अपनी height unit चुनें, weight kg में डालें और तुरंत अपना BMI zone देखें।',unit:'यूनिट',metric:'मेट्रिक (cm / kg)',imperial:'Height ft/in • Weight kg',height:'हाइट',weight:'वेट',feet:'हाइट — फीट',inches:'हाइट — इंच',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'kg',calculate:'BMI निकालें',result:'अपनी details भरें और BMI zone देखें।',disclaimer:'BMI एक screening measure है, diagnosis नहीं। personalised guidance के लिए qualified health professional से सलाह लें।',placeholderHeight:'जैसे 175',placeholderWeight:'जैसे 75'},
-    testimonials:{eyebrow:'मेंबर की राय',title:'ट्रेन। <em>ग्रो करें।</em><br>फिर दोहराएँ।',description:'ये design के sample testimonials हैं। पब्लिश करने से पहले इन्हें असली member reviews से बदलें।',one:'असली review मिलने पर यहाँ member feedback डालें।',two:'छोटे और genuine comments trust बढ़ाने में मदद करेंगे।',three:'असली experiences इस section को personal और authentic बनाएँगे।',member:'— मेंबर नाम'},
+    testimonials:{eyebrow:'मेंबर की राय',title:'ट्रेन। <em>ग्रो करें।</em><br>फिर दोहराएँ।',description:'रिव्यू के विकल्प तैयार हैं। बाद में असली member reviews जोड़ें या customer से WhatsApp पर review मंगाएँ।',one:'असली review मिलने पर यहाँ member feedback डालें।',two:'छोटे और genuine comments trust बढ़ाने में मदद करेंगे।',three:'असली experiences इस section को personal और authentic बनाएँगे।',member:'— मेंबर नाम'},
+    payment:{eyebrow:'पेमेंट',title:'UFZ JOIN करें।<br><em>आसान पेमेंट।</em>',description:'Membership चुनें या ₹500 minimum से कोई भी pre-membership amount pay करें। UPI या PhonePe QR से भुगतान करें।',scanBadge:'स्कैन करके पे करें',scanTitle:'PhonePe QR',qrHint:'PhonePe खोलें और यह QR scan करके pay करें।',upiLabel:'UPI ID',copy:'कॉपी',customBadge:'प्री-मेंबरशिप',formTitle:'Amount चुनें',name:'नाम',mobile:'मोबाइल',plan:'प्लान',amount:'AMOUNT (MIN ₹500)',txn:'TRANSACTION / UTR (वैकल्पिक)',namePlaceholder:'अपना नाम',mobilePlaceholder:'मोबाइल नंबर',txnPlaceholder:'पेमेंट के बाद डालें',payNow:'UPI से PAY NOW',shareWhatsapp:'पेमेंट हो गया — WHATSAPP पर DETAILS भेजें',note:'UPI से payment app खुलेगा। पेमेंट के बाद WhatsApp button से अपनी details UFZ को भेजें। यह website payment को automatically verify नहीं करती।'},
+    reviews:{eyebrow:'आपका अनुभव',modalTitle:'अपना Review शेयर करें',write:'रिव्यू लिखें',google:'GOOGLE पर REVIEW करें',name:'नाम',rating:'RATING',text:'रिव्यू',send:'WHATSAPP पर REVIEW भेजें',namePlaceholder:'अपना नाम',textPlaceholder:'अपना experience लिखें...',note:'Review WhatsApp में खुलेगा, जहाँ आप इसे सीधे Universe Fitness Zone को भेज सकते हैं।'},
     achievement:{eyebrow:'अचीवमेंट्स',title:'मेहनत का <br><em>मेडल</em> मिलता है।',description:'यहाँ members, competitions, certificates और medals की photos दिखा सकते हैं।',placeholder:'आपकी उपलब्धि की<br>फोटो यहाँ'},
     contact:{eyebrow:'हमसे मिलें',title:'ट्रेनिंग के लिए <br><em>तैयार?</em>',addressLabel:'पता',contactLabel:'संपर्क'},
     meta:{title:'Universe Fitness Zone | Silvassa',description:'Universe Fitness Zone — Silvassa में fitness training.'},
@@ -59,9 +63,9 @@ const translations = {
     whatsapp:{info:'नमस्ते Universe Fitness Zone, मुझे जिम के बारे में जानकारी चाहिए।',join1:'नमस्ते UFZ, मुझे 1 महीने की membership लेनी है.',join2:'नमस्ते UFZ, मुझे 2 महीने की membership लेनी है.',join3:'नमस्ते UFZ, मुझे 3 महीने की membership लेनी है.',join6:'नमस्ते UFZ, मुझे 6 महीने की membership लेनी है.',join9:'नमस्ते UFZ, मुझे 9 महीने की membership लेनी है.',join12:'नमस्ते UFZ, मुझे 12 महीने की membership लेनी है.'}
   },
   hinglish: {
-    nav:{home:'Home',about:'Hamare Baare Mein',plans:'Plans',trainers:'Trainers',gallery:'Gallery',bmi:'BMI',contact:'Contact'},
+    nav:{home:'Home',about:'Hamare Baare Mein',plans:'Plans',trainers:'Trainers',gallery:'Gallery',bmi:'BMI',payments:'Pay',reviews:'Reviews',contact:'Contact'},
     common:{scroll:'SCROLL'},
-    buttons:{call:'CALL NOW',whatsapp:'WHATSAPP',join:'JOIN KARE',callShort:'CALL',maps:'OPEN MAPS'},
+    buttons:{call:'CALL NOW',whatsapp:'WHATSAPP',join:'JOIN KARE',callShort:'CALL',maps:'OPEN MAPS',instagram:'INSTAGRAM'},
     hero:{eyebrow:'SILVASSA • STRENGTH • FITNESS • RESULTS',title:'APNA <br><em>STRONGER</em> VERSION BANAO.',lead:'Purpose ke saath train karo, limits push karo aur Universe Fitness Zone mein apna strongest version bano.'},
     about:{eyebrow:'HAMARE BAARE MEIN',title:'TUMHARI FITNESS.<br><em>TUMHARI DUNIYA.</em>',text:'Universe Fitness Zone ek dedicated fitness space hai jahan aap hard train karke, consistency maintain karke apne fitness goals ki taraf badh sakte ho. Beginner ho ya next level par ja rahe ho—har workout ko count karo.',item1:'Strength<br>Training',item2:'Fitness<br>Training',item3:'Goal<br>Focused'},
     stats:{space:'DEDICATED<br>SPACE',training:'TRAINING<br>FOCUS',goals:'FITNESS<br>GOALS',commitment:'TUMHARA<br>COMMITMENT'},
@@ -69,7 +73,9 @@ const translations = {
     trainers:{eyebrow:'HAMARI TEAM',title:'APNE <br><em>TRAINERS SE MILO.</em>',description:'Trainer cards ready hain. Baad mein names, photos aur qualifications add kar sakte ho.',photo:'TRAINER<br>PHOTO',name:'YOUR TRAINER',skill1:'Strength • Fitness • Conditioning',skill2:'Fitness • Weight Training • Guidance',skill3:'Conditioning • Goals • Progress'},
     gallery:{eyebrow:'PHOTO GALLERY',title:'YAHAN KI <br><em>ENERGY DEKHO.</em>',description:'Aapka real UFZ logo aur membership-fee photo included hai. Baad mein gym, trainer, medal aur member photos assets/images mein add karo.',gym:'GYM FLOOR',training:'TRAINING',equipment:'EQUIPMENT',weights:'WEIGHTS',fees:'MEMBERSHIP FEES'},
     bmi:{eyebrow:'FREE TOOL',title:'APNA <br><em>BMI CHECK KARO.</em>',description:'Apni height unit choose karo, weight kg mein enter karo aur turant apna BMI zone dekho.',unit:'UNIT',metric:'Metric (cm / kg)',imperial:'Height ft/in • Weight kg',height:'HEIGHT',weight:'WEIGHT',feet:'HEIGHT — FEET',inches:'HEIGHT — INCHES',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'kg',calculate:'BMI CALCULATE KARO',result:'Details enter karo aur BMI zone dekho.',disclaimer:'BMI ek screening measure hai, diagnosis nahi. Personalised guidance ke liye qualified health professional se advice lo.',placeholderHeight:'jaise 175',placeholderWeight:'jaise 75'},
-    testimonials:{eyebrow:'MEMBER VOICES',title:'TRAIN. <em>GROW.</em><br>REPEAT.',description:'Ye design ke sample testimonials hain. Publish karne se pehle real member reviews se replace karo.',one:'Real review milne par yahan member feedback add karo.',two:'Short aur genuine comments trust build karne mein help karenge.',three:'Real experiences is section ko personal aur authentic banayenge.',member:'— MEMBER NAME'},
+    testimonials:{eyebrow:'MEMBER VOICES',title:'TRAIN. <em>GROW.</em><br>REPEAT.',description:'Review options ready hain. Baad mein real member reviews add karo ya customer se WhatsApp par review mangwao.',one:'Real review milne par yahan member feedback add karo.',two:'Short aur genuine comments trust build karne mein help karenge.',three:'Real experiences is section ko personal aur authentic banayenge.',member:'— MEMBER NAME'},
+    payment:{eyebrow:'PAY MEMBERSHIP',title:'UFZ JOIN KARO.<br><em>PAY EASY.</em>',description:'Membership choose karo ya ₹500 minimum se koi bhi pre-membership amount pay karo. UPI ya PhonePe QR se payment karo.',scanBadge:'SCAN & PAY',scanTitle:'PhonePe QR',qrHint:'PhonePe kholo aur QR scan karke pay karo.',upiLabel:'UPI ID',copy:'COPY',customBadge:'PRE-MEMBERSHIP',formTitle:'Amount Choose Karo',name:'NAME',mobile:'MOBILE',plan:'PLAN',amount:'AMOUNT (MIN ₹500)',txn:'TRANSACTION / UTR (OPTIONAL)',namePlaceholder:'Apna naam',mobilePlaceholder:'Mobile number',txnPlaceholder:'Payment ke baad enter karo',payNow:'PAY NOW WITH UPI',shareWhatsapp:'PAYMENT HO GAYA — WHATSAPP PAR DETAILS BHEJO',note:'UPI se payment app open hoga. Payment ke baad WhatsApp button se apni details UFZ ko bhejo. Website payment ko automatically verify nahi karti.'},
+    reviews:{eyebrow:'YOUR EXPERIENCE',modalTitle:'Apna Review Share Karo',write:'REVIEW LIKHO',google:'GOOGLE PAR REVIEW',name:'NAME',rating:'RATING',text:'REVIEW',send:'WHATSAPP PAR REVIEW BHEJO',namePlaceholder:'Apna naam',textPlaceholder:'Apna experience likho...',note:'Review WhatsApp mein open hoga, jahan se aap ise direct Universe Fitness Zone ko bhej sakte ho.'},
     achievement:{eyebrow:'ACHIEVEMENTS',title:'HARD WORK KO <br><em>MEDAL</em> MILTA HAI.',description:'Members, competitions, certificates aur medals ki photos yahan dikhao. Real achievements ke liye section ready hai.',placeholder:'YOUR ACHIEVEMENT<br>PHOTO HERE'},
     contact:{eyebrow:'VISIT US',title:'TRAINING KE LIYE<br><em>READY?</em>',addressLabel:'ADDRESS',contactLabel:'CONTACT'},
     meta:{title:'Universe Fitness Zone | Silvassa',description:'Universe Fitness Zone — Silvassa mein premium fitness training.'},
@@ -93,6 +99,10 @@ function applyLanguage(lang) {
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const value = getPath(t, el.dataset.i18nHtml);
     if (value !== undefined) el.innerHTML = value;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const value = getPath(t, el.dataset.i18nPlaceholder);
+    if (value !== undefined) el.placeholder = value;
   });
   document.title = t.meta.title;
   const desc = document.querySelector('meta[name="description"]');
@@ -195,4 +205,122 @@ calc?.addEventListener('click', () => {
   result.className = 'bmi-result ' + category.cls;
   result.innerHTML = '<strong>' + bmi.toFixed(1) + '</strong><span class="bmi-status-icon">' + category.icon + '</span><span class="bmi-status">' + category.label + '</span><small>' + t.bmiLabels.screening + '</small>';
   setBmiMarker(bmi);
+});
+
+// ---------- Payments ----------
+const UPI_ID = '6352214914@ibl';
+const UFZ_PHONE = '916352214914';
+const upiIdText = document.getElementById('upiIdText');
+const copyUpi = document.getElementById('copyUpi');
+const payPlan = document.getElementById('payPlan');
+const payAmount = document.getElementById('payAmount');
+const payUpiBtn = document.getElementById('payUpiBtn');
+const sharePayment = document.getElementById('sharePayment');
+
+function cleanMoney(value) {
+  const amount = Number(value);
+  return Number.isFinite(amount) ? Math.round(amount) : 0;
+}
+
+function updatePayUpiLink() {
+  if (!payUpiBtn || !payAmount) return;
+  const amount = cleanMoney(payAmount.value);
+  const plan = payPlan?.value || 'Pre-Membership';
+  if (amount < 500) {
+    payUpiBtn.removeAttribute('href');
+    payUpiBtn.setAttribute('aria-disabled', 'true');
+    return;
+  }
+  const params = new URLSearchParams({
+    pa: UPI_ID,
+    pn: 'Universe Fitness Zone',
+    am: String(amount),
+    cu: 'INR',
+    tn: `UFZ ${plan}`
+  });
+  payUpiBtn.href = 'upi://pay?' + params.toString();
+  payUpiBtn.setAttribute('aria-disabled', 'false');
+}
+
+payPlan?.addEventListener('change', () => {
+  const chosen = Number(payPlan.selectedOptions?.[0]?.dataset?.price || 0);
+  if (chosen >= 500 && payAmount) payAmount.value = chosen;
+  updatePayUpiLink();
+});
+payAmount?.addEventListener('input', updatePayUpiLink);
+updatePayUpiLink();
+
+copyUpi?.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(UPI_ID);
+    const lang = document.getElementById('languageSelect')?.value || 'en';
+    const msg = ({hi:'कॉपी हो गया ✓',hinglish:'Copied ✓',en:'Copied ✓'})[lang] || 'Copied ✓';
+    copyUpi.textContent = msg;
+    setTimeout(() => {
+      const t = translations[document.getElementById('languageSelect')?.value || 'en'] || translations.en;
+      copyUpi.textContent = t.payment.copy;
+    }, 1400);
+  } catch (_) {
+    window.prompt('Copy UPI ID', UPI_ID);
+  }
+});
+
+sharePayment?.addEventListener('click', () => {
+  const lang = document.getElementById('languageSelect')?.value || 'en';
+  const t = translations[lang] || translations.en;
+  const name = document.getElementById('payName')?.value.trim() || '';
+  const mobile = document.getElementById('payMobile')?.value.trim() || '';
+  const plan = payPlan?.value || 'Pre-Membership';
+  const amount = cleanMoney(payAmount?.value);
+  const txn = document.getElementById('payTxn')?.value.trim() || '';
+  if (amount < 500) {
+    alert(t.payment.amount + ' ₹500+');
+    payAmount?.focus();
+    return;
+  }
+  const prefix = lang === 'hi' ? 'नमस्ते Universe Fitness Zone, मैंने payment किया है।' : lang === 'hinglish' ? 'Hi Universe Fitness Zone, maine payment kiya hai.' : 'Hi Universe Fitness Zone, I have made a payment.';
+  const message = [
+    prefix,
+    '',
+    `Name: ${name || 'Not provided'}`,
+    `Mobile: ${mobile || 'Not provided'}`,
+    `Plan: ${plan}`,
+    `Amount: ₹${amount.toLocaleString('en-IN')}`,
+    `UPI ID: ${UPI_ID}`,
+    `Transaction / UTR: ${txn || 'Not provided'}`,
+    '',
+    'Please confirm my membership/payment.'
+  ].join('\n');
+  window.open('https://wa.me/' + UFZ_PHONE + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
+});
+
+// ---------- Reviews ----------
+const reviewModal = document.getElementById('reviewModal');
+const writeReviewBtn = document.getElementById('writeReviewBtn');
+const sendReview = document.getElementById('sendReview');
+
+function toggleReviewModal(show) {
+  if (!reviewModal) return;
+  reviewModal.hidden = !show;
+  reviewModal.setAttribute('aria-hidden', String(!show));
+  document.body.classList.toggle('modal-open', show);
+  if (show) document.getElementById('reviewName')?.focus();
+}
+
+writeReviewBtn?.addEventListener('click', () => toggleReviewModal(true));
+reviewModal?.querySelectorAll('[data-close-review]').forEach(el => el.addEventListener('click', () => toggleReviewModal(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && reviewModal && !reviewModal.hidden) toggleReviewModal(false); });
+
+sendReview?.addEventListener('click', () => {
+  const lang = document.getElementById('languageSelect')?.value || 'en';
+  const name = document.getElementById('reviewName')?.value.trim() || '';
+  const rating = document.getElementById('reviewRating')?.value || '5';
+  const text = document.getElementById('reviewText')?.value.trim() || '';
+  if (!name || !text) {
+    alert(lang === 'hi' ? 'कृपया नाम और रिव्यू भरें।' : lang === 'hinglish' ? 'Please name aur review bhar do.' : 'Please enter your name and review.');
+    return;
+  }
+  const prefix = lang === 'hi' ? 'नमस्ते Universe Fitness Zone, मैं अपना review भेज रहा/रही हूँ।' : lang === 'hinglish' ? 'Hi Universe Fitness Zone, main apna review bhej raha/rahi hoon.' : 'Hi Universe Fitness Zone, I am sharing my review.';
+  const message = [prefix, '', `Name: ${name}`, `Rating: ${rating}/5`, `Review: ${text}`].join('\n');
+  window.open('https://wa.me/' + UFZ_PHONE + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
 });

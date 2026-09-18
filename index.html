@@ -26,7 +26,10 @@
       <a href="#trainers" data-i18n="nav.trainers">Trainers</a>
       <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
       <a href="#bmi" data-i18n="nav.bmi">BMI</a>
+      <a href="#payments" data-i18n="nav.payments">Pay</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a class="instagram-top" href="https://www.instagram.com/ufz.silvassa?stkn=NmszNTJwNHJuOTBs" target="_blank" rel="noopener" data-i18n="buttons.instagram">Instagram</a>
       <label class="lang-wrap" title="Language">
         <span class="sr-only">Language</span>
         <select id="languageSelect" aria-label="Language">
@@ -115,6 +118,50 @@
       </div>
     </section>
 
+
+
+    <section id="payments" class="section payment-section dark">
+      <div class="section-head reveal">
+        <div><p class="eyebrow" data-i18n="payment.eyebrow">PAY MEMBERSHIP</p><h2 data-i18n-html="payment.title">JOIN UFZ.<br><em>PAY EASY.</em></h2></div>
+        <p data-i18n="payment.description">Choose a membership or enter any pre-membership amount from ₹500 onwards. Pay by UPI or scan the PhonePe QR.</p>
+      </div>
+      <div class="payment-grid">
+        <div class="payment-card qr-card reveal">
+          <div class="payment-badge" data-i18n="payment.scanBadge">SCAN & PAY</div>
+          <h3 data-i18n="payment.scanTitle">PhonePe QR</h3>
+          <div class="payment-qr-wrap"><img class="payment-qr" src="assets/images/phonepe-scanner.jpeg" alt="Universe Fitness Zone PhonePe payment QR code"></div>
+          <p class="qr-hint" data-i18n="payment.qrHint">Open PhonePe and scan this QR to pay.</p>
+          <div class="upi-box"><span data-i18n="payment.upiLabel">UPI ID</span><strong id="upiIdText">6352214914@ibl</strong><button class="copy-btn" id="copyUpi" type="button" data-i18n="payment.copy">COPY</button></div>
+        </div>
+        <div class="payment-card pay-card reveal">
+          <div class="payment-badge accent" data-i18n="payment.customBadge">PRE-MEMBERSHIP</div>
+          <h3 data-i18n="payment.formTitle">Choose Amount</h3>
+          <div class="form-grid">
+            <label><span data-i18n="payment.name">NAME</span><input id="payName" type="text" placeholder="Your name" data-i18n-placeholder="payment.namePlaceholder"></label>
+            <label><span data-i18n="payment.mobile">MOBILE</span><input id="payMobile" type="tel" placeholder="Mobile number" data-i18n-placeholder="payment.mobilePlaceholder"></label>
+            <label class="full"><span data-i18n="payment.plan">PLAN</span>
+              <select id="payPlan">
+                <option value="Pre-Membership" data-price="">Pre-Membership — ₹500 minimum</option>
+                <option value="1 Month" data-price="2000">1 Month — ₹2,000</option>
+                <option value="2 Months" data-price="3500">2 Months — ₹3,500</option>
+                <option value="3 Months" data-price="5000">3 Months — ₹5,000</option>
+                <option value="6 Months" data-price="9000">6 Months — ₹9,000</option>
+                <option value="9 Months" data-price="12000">9 Months — ₹12,000</option>
+                <option value="12 Months" data-price="15000">12 Months — ₹15,000</option>
+              </select>
+            </label>
+            <label class="full"><span data-i18n="payment.amount">AMOUNT (MIN ₹500)</span><input id="payAmount" type="number" min="500" step="1" value="500" inputmode="numeric"></label>
+            <label class="full"><span data-i18n="payment.txn">TRANSACTION / UTR (OPTIONAL)</span><input id="payTxn" type="text" placeholder="Enter after payment" data-i18n-placeholder="payment.txnPlaceholder"></label>
+          </div>
+          <div class="pay-actions">
+            <a class="btn primary" id="payUpiBtn" href="#" data-i18n="payment.payNow">PAY NOW WITH UPI</a>
+            <button class="btn outline" id="sharePayment" type="button" data-i18n="payment.shareWhatsapp">I HAVE PAID — SHARE ON WHATSAPP</button>
+          </div>
+          <p class="payment-note" data-i18n="payment.note">UPI payment opens your payment app. After paying, use the WhatsApp button to send your payment details to UFZ. This website does not automatically verify payments.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="bmi" class="section bmi-section">
       <div class="bmi-copy reveal">
         <p class="eyebrow" data-i18n="bmi.eyebrow">FREE TOOL</p>
@@ -154,13 +201,18 @@
       </div>
     </section>
 
-    <section class="section testimonials dark">
-      <div class="section-head reveal"><div><p class="eyebrow" data-i18n="testimonials.eyebrow">MEMBER VOICES</p><h2 data-i18n-html="testimonials.title">TRAIN. <em>GROW.</em><br>REPEAT.</h2></div><p data-i18n="testimonials.description">These are sample testimonials for the design. Replace them with real member feedback before publishing.</p></div>
+    <section id="reviews" class="section testimonials dark">
+      <div class="section-head reveal"><div><p class="eyebrow" data-i18n="testimonials.eyebrow">MEMBER VOICES</p><h2 data-i18n-html="testimonials.title">TRAIN. <em>GROW.</em><br>REPEAT.</h2></div><p data-i18n="testimonials.description">Review options are ready. Add real member reviews later, or let customers send their review through WhatsApp.</p></div>
       <div class="quotes">
         <article class="quote reveal"><div>“</div><p data-i18n="testimonials.one">Sample member feedback can go here once you collect a real review.</p><strong data-i18n="testimonials.member">— MEMBER NAME</strong></article>
         <article class="quote reveal"><div>“</div><p data-i18n="testimonials.two">Use short, genuine comments from your members to build trust.</p><strong data-i18n="testimonials.member">— MEMBER NAME</strong></article>
         <article class="quote reveal"><div>“</div><p data-i18n="testimonials.three">Real experiences will make this section feel personal and authentic.</p><strong data-i18n="testimonials.member">— MEMBER NAME</strong></article>
       </div>
+      <div class="review-actions reveal">
+        <button class="btn primary" id="writeReviewBtn" type="button" data-i18n="reviews.write">WRITE A REVIEW</button>
+        <a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Universe%20Fitness%20Zone%20Silvassa" target="_blank" rel="noopener" data-i18n="reviews.google">REVIEW ON GOOGLE</a>
+      </div>
+
     </section>
 
     <section class="achievement reveal">
@@ -178,7 +230,25 @@
     </section>
   </main>
 
-  <footer><div><strong>UNIVERSE FITNESS ZONE</strong><span>801 Premaldeep Square • Kilvani Naka • Silvassa</span></div><a href="tel:+916352214914">+91 6352 214 914</a></footer>
+  <footer><div><strong>UNIVERSE FITNESS ZONE</strong><span>801 Premaldeep Square • Kilvani Naka • Silvassa</span><a class="footer-instagram" href="https://www.instagram.com/ufz.silvassa?stkn=NmszNTJwNHJuOTBs" target="_blank" rel="noopener" data-i18n="buttons.instagram">Instagram @ufz.silvassa</a></div><a href="tel:+916352214914">+91 6352 214 914</a></footer>
+
+
+  <div class="modal" id="reviewModal" hidden aria-hidden="true">
+    <div class="modal-backdrop" data-close-review></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="reviewModalTitle">
+      <button class="modal-close" type="button" data-close-review aria-label="Close">×</button>
+      <p class="eyebrow" data-i18n="reviews.eyebrow">YOUR EXPERIENCE</p>
+      <h3 id="reviewModalTitle" data-i18n="reviews.modalTitle">Share Your Review</h3>
+      <div class="review-form">
+        <label><span data-i18n="reviews.name">NAME</span><input id="reviewName" type="text" placeholder="Your name" data-i18n-placeholder="reviews.namePlaceholder"></label>
+        <label><span data-i18n="reviews.rating">RATING</span><select id="reviewRating"><option value="5">★★★★★ 5/5</option><option value="4">★★★★☆ 4/5</option><option value="3">★★★☆☆ 3/5</option><option value="2">★★☆☆☆ 2/5</option><option value="1">★☆☆☆☆ 1/5</option></select></label>
+        <label class="full"><span data-i18n="reviews.text">REVIEW</span><textarea id="reviewText" rows="5" placeholder="Write your experience..." data-i18n-placeholder="reviews.textPlaceholder"></textarea></label>
+      </div>
+      <button class="btn primary" id="sendReview" type="button" data-i18n="reviews.send">SEND REVIEW ON WHATSAPP</button>
+      <p class="modal-note" data-i18n="reviews.note">Your review will open in WhatsApp so you can send it directly to Universe Fitness Zone.</p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
