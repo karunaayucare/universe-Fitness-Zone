@@ -30,7 +30,7 @@ const translations = {
     plans:{eyebrow:'MEMBERSHIP',title:'CHOOSE YOUR<br><em>PLAN.</em>',description:'Choose the membership duration that suits you and start your fitness journey.',membership:'MEMBERSHIP',access:'Gym access',strength:'Strength training',guidance:'Fitness guidance',popular:'POPULAR',bestValue:'BEST VALUE',note:'Membership fees shown above are based on the fee card provided for this website.'},
     trainers:{eyebrow:'THE TEAM',title:'MEET YOUR<br><em>TRAINERS.</em>',description:'Trainer cards are ready. Replace the placeholders with trainer names, photos and qualifications when you are ready.',photo:'TRAINER<br>PHOTO',name:'YOUR TRAINER',skill1:'Strength • Fitness • Conditioning',skill2:'Fitness • Weight Training • Guidance',skill3:'Conditioning • Goals • Progress'},
     gallery:{eyebrow:'PHOTO GALLERY',title:'SEE THE<br><em>ENERGY.</em>',description:'Your real UFZ logo and membership-fee photo are included. Add more gym, trainer, medal and member photos to assets/images as you collect them.',gym:'GYM FLOOR',training:'TRAINING',equipment:'EQUIPMENT',weights:'WEIGHTS',fees:'MEMBERSHIP FEES'},
-    bmi:{eyebrow:'FREE TOOL',title:'CHECK YOUR<br><em>BMI.</em>',description:'Choose your unit, enter your height and weight, and instantly see your BMI zone.',unit:'UNIT',metric:'Metric (cm / kg)',imperial:'Imperial (ft / in / lb)',height:'HEIGHT',weight:'WEIGHT',feet:'HEIGHT — FEET',inches:'HEIGHT — INCHES',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'lb',calculate:'CALCULATE BMI',result:'Enter your details to see your BMI zone.',disclaimer:'BMI is a screening measure, not a diagnosis. For personalised guidance, speak with a qualified health professional.',placeholderHeight:'e.g. 175',placeholderWeight:'e.g. 75'},
+    bmi:{eyebrow:'FREE TOOL',title:'CHECK YOUR<br><em>BMI.</em>',description:'Choose your height unit, enter your weight in kg, and instantly see your BMI zone.',unit:'UNIT',metric:'Metric (cm / kg)',imperial:'Height ft/in • Weight kg',height:'HEIGHT',weight:'WEIGHT',feet:'HEIGHT — FEET',inches:'HEIGHT — INCHES',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'kg',calculate:'CALCULATE BMI',result:'Enter your details to see your BMI zone.',disclaimer:'BMI is a screening measure, not a diagnosis. For personalised guidance, speak with a qualified health professional.',placeholderHeight:'e.g. 175',placeholderWeight:'e.g. 75'},
     testimonials:{eyebrow:'MEMBER VOICES',title:'TRAIN. <em>GROW.</em><br>REPEAT.',description:'These are sample testimonials for the design. Replace them with real member feedback before publishing.',one:'Sample member feedback can go here once you collect a real review.',two:'Use short, genuine comments from your members to build trust.',three:'Real experiences will make this section feel personal and authentic.',member:'— MEMBER NAME'},
     achievement:{eyebrow:'ACHIEVEMENTS',title:'HARD WORK<br>DESERVES A <em>MEDAL.</em>',description:'Showcase your members, competitions, certificates and medals here. This section is ready for your real achievements.',placeholder:'YOUR ACHIEVEMENT<br>PHOTO HERE'},
     contact:{eyebrow:'VISIT US',title:'READY TO<br><em>TRAIN?</em>',addressLabel:'ADDRESS',contactLabel:'CONTACT'},
@@ -49,7 +49,7 @@ const translations = {
     plans:{eyebrow:'मेंबरशिप',title:'अपना <br><em>प्लान चुनें।</em>',description:'अपनी सुविधा के अनुसार मेंबरशिप अवधि चुनें और अपनी फिटनेस जर्नी शुरू करें।',membership:'मेंबरशिप',access:'जिम एक्सेस',strength:'स्ट्रेंथ ट्रेनिंग',guidance:'फिटनेस गाइडेंस',popular:'लोकप्रिय',bestValue:'बेस्ट वैल्यू',note:'ऊपर दिए गए मेंबरशिप फीस आपके दिए गए फीस कार्ड पर आधारित हैं।'},
     trainers:{eyebrow:'हमारी टीम',title:'अपने <br><em>ट्रेनर्स से मिलें।</em>',description:'ट्रेनर कार्ड तैयार हैं। बाद में इनके नाम, फोटो और qualifications डाल सकते हैं।',photo:'ट्रेनर<br>फोटो',name:'आपके ट्रेनर',skill1:'स्ट्रेंथ • फिटनेस • कंडीशनिंग',skill2:'फिटनेस • वेट ट्रेनिंग • गाइडेंस',skill3:'कंडीशनिंग • गोल्स • प्रोग्रेस'},
     gallery:{eyebrow:'फोटो गैलरी',title:'यहाँ की <br><em>एनर्जी देखें।</em>',description:'आपका असली UFZ लोगो और membership-fee photo शामिल है। आगे gym, trainer, medal और member photos assets/images में जोड़ सकते हैं।',gym:'जिम फ्लोर',training:'ट्रेनिंग',equipment:'इक्विपमेंट',weights:'वेट्स',fees:'मेंबरशिप फीस'},
-    bmi:{eyebrow:'फ्री टूल',title:'अपना <br><em>BMI देखें।</em>',description:'अपनी unit चुनें, height और weight डालें और तुरंत अपना BMI zone देखें।',unit:'यूनिट',metric:'मेट्रिक (cm / kg)',imperial:'इम्पीरियल (ft / in / lb)',height:'हाइट',weight:'वेट',feet:'हाइट — फीट',inches:'हाइट — इंच',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'lb',calculate:'BMI निकालें',result:'अपनी details भरें और BMI zone देखें।',disclaimer:'BMI एक screening measure है, diagnosis नहीं। personalised guidance के लिए qualified health professional से सलाह लें।',placeholderHeight:'जैसे 175',placeholderWeight:'जैसे 75'},
+    bmi:{eyebrow:'फ्री टूल',title:'अपना <br><em>BMI देखें।</em>',description:'अपनी height unit चुनें, weight kg में डालें और तुरंत अपना BMI zone देखें।',unit:'यूनिट',metric:'मेट्रिक (cm / kg)',imperial:'Height ft/in • Weight kg',height:'हाइट',weight:'वेट',feet:'हाइट — फीट',inches:'हाइट — इंच',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'kg',calculate:'BMI निकालें',result:'अपनी details भरें और BMI zone देखें।',disclaimer:'BMI एक screening measure है, diagnosis नहीं। personalised guidance के लिए qualified health professional से सलाह लें।',placeholderHeight:'जैसे 175',placeholderWeight:'जैसे 75'},
     testimonials:{eyebrow:'मेंबर की राय',title:'ट्रेन। <em>ग्रो करें।</em><br>फिर दोहराएँ।',description:'ये design के sample testimonials हैं। पब्लिश करने से पहले इन्हें असली member reviews से बदलें।',one:'असली review मिलने पर यहाँ member feedback डालें।',two:'छोटे और genuine comments trust बढ़ाने में मदद करेंगे।',three:'असली experiences इस section को personal और authentic बनाएँगे।',member:'— मेंबर नाम'},
     achievement:{eyebrow:'अचीवमेंट्स',title:'मेहनत का <br><em>मेडल</em> मिलता है।',description:'यहाँ members, competitions, certificates और medals की photos दिखा सकते हैं।',placeholder:'आपकी उपलब्धि की<br>फोटो यहाँ'},
     contact:{eyebrow:'हमसे मिलें',title:'ट्रेनिंग के लिए <br><em>तैयार?</em>',addressLabel:'पता',contactLabel:'संपर्क'},
@@ -68,7 +68,7 @@ const translations = {
     plans:{eyebrow:'MEMBERSHIP',title:'APNA <br><em>PLAN CHUNO.</em>',description:'Jo membership duration aapko suit kare, woh choose karo aur fitness journey start karo.',membership:'MEMBERSHIP',access:'Gym access',strength:'Strength training',guidance:'Fitness guidance',popular:'POPULAR',bestValue:'BEST VALUE',note:'Upar diye gaye membership fees aapke diye hue fee card par based hain.'},
     trainers:{eyebrow:'HAMARI TEAM',title:'APNE <br><em>TRAINERS SE MILO.</em>',description:'Trainer cards ready hain. Baad mein names, photos aur qualifications add kar sakte ho.',photo:'TRAINER<br>PHOTO',name:'YOUR TRAINER',skill1:'Strength • Fitness • Conditioning',skill2:'Fitness • Weight Training • Guidance',skill3:'Conditioning • Goals • Progress'},
     gallery:{eyebrow:'PHOTO GALLERY',title:'YAHAN KI <br><em>ENERGY DEKHO.</em>',description:'Aapka real UFZ logo aur membership-fee photo included hai. Baad mein gym, trainer, medal aur member photos assets/images mein add karo.',gym:'GYM FLOOR',training:'TRAINING',equipment:'EQUIPMENT',weights:'WEIGHTS',fees:'MEMBERSHIP FEES'},
-    bmi:{eyebrow:'FREE TOOL',title:'APNA <br><em>BMI CHECK KARO.</em>',description:'Apni unit choose karo, height aur weight enter karo aur turant apna BMI zone dekho.',unit:'UNIT',metric:'Metric (cm / kg)',imperial:'Imperial (ft / in / lb)',height:'HEIGHT',weight:'WEIGHT',feet:'HEIGHT — FEET',inches:'HEIGHT — INCHES',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'lb',calculate:'BMI CALCULATE KARO',result:'Details enter karo aur BMI zone dekho.',disclaimer:'BMI ek screening measure hai, diagnosis nahi. Personalised guidance ke liye qualified health professional se advice lo.',placeholderHeight:'jaise 175',placeholderWeight:'jaise 75'},
+    bmi:{eyebrow:'FREE TOOL',title:'APNA <br><em>BMI CHECK KARO.</em>',description:'Apni height unit choose karo, weight kg mein enter karo aur turant apna BMI zone dekho.',unit:'UNIT',metric:'Metric (cm / kg)',imperial:'Height ft/in • Weight kg',height:'HEIGHT',weight:'WEIGHT',feet:'HEIGHT — FEET',inches:'HEIGHT — INCHES',cm:'cm',kg:'kg',feetShort:'ft',inchesShort:'in',lb:'kg',calculate:'BMI CALCULATE KARO',result:'Details enter karo aur BMI zone dekho.',disclaimer:'BMI ek screening measure hai, diagnosis nahi. Personalised guidance ke liye qualified health professional se advice lo.',placeholderHeight:'jaise 175',placeholderWeight:'jaise 75'},
     testimonials:{eyebrow:'MEMBER VOICES',title:'TRAIN. <em>GROW.</em><br>REPEAT.',description:'Ye design ke sample testimonials hain. Publish karne se pehle real member reviews se replace karo.',one:'Real review milne par yahan member feedback add karo.',two:'Short aur genuine comments trust build karne mein help karenge.',three:'Real experiences is section ko personal aur authentic banayenge.',member:'— MEMBER NAME'},
     achievement:{eyebrow:'ACHIEVEMENTS',title:'HARD WORK KO <br><em>MEDAL</em> MILTA HAI.',description:'Members, competitions, certificates aur medals ki photos yahan dikhao. Real achievements ke liye section ready hai.',placeholder:'YOUR ACHIEVEMENT<br>PHOTO HERE'},
     contact:{eyebrow:'VISIT US',title:'TRAINING KE LIYE<br><em>READY?</em>',addressLabel:'ADDRESS',contactLabel:'CONTACT'},
@@ -99,8 +99,10 @@ function applyLanguage(lang) {
   if (desc) desc.content = t.meta.description;
   const hField = document.getElementById('height');
   const wField = document.getElementById('weight');
+  const wKgField = document.getElementById('weightKg');
   if (hField) hField.placeholder = t.bmi.placeholderHeight;
   if (wField) wField.placeholder = t.bmi.placeholderWeight;
+  if (wKgField) wKgField.placeholder = t.bmi.placeholderWeight;
   const langSelect = document.getElementById('languageSelect');
   if (langSelect) langSelect.value = lang;
   updateWhatsappLinks(t);
@@ -177,15 +179,15 @@ calc?.addEventListener('click', () => {
   } else {
     const ft = parseFloat(document.getElementById('heightFt')?.value);
     const inches = parseFloat(document.getElementById('heightIn')?.value || 0);
-    const lb = parseFloat(document.getElementById('weightLb')?.value);
-    if (!ft || ft < 2 || ft > 8 || inches < 0 || inches > 11.9 || !lb || lb < 22 || lb > 660) {
+    const weightKg = parseFloat(document.getElementById('weightKg')?.value);
+    if (!ft || ft < 2 || ft > 8 || inches < 0 || inches > 11.9 || !weightKg || weightKg < 10 || weightKg > 300) {
       result.className = 'bmi-result invalid';
       result.innerHTML = '<strong>—</strong><span>' + t.bmiLabels.invalid + '</span>';
       return;
     }
     const totalInches = (ft * 12) + inches;
     hMeters = totalInches * 0.0254;
-    kg = lb * 0.45359237;
+    kg = weightKg;
   }
 
   const bmi = kg / Math.pow(hMeters, 2);

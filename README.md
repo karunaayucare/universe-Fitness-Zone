@@ -19,3 +19,7 @@ Updated static website for Universe Fitness Zone, Silvassa.
 5. Wait 1–10 minutes and refresh your site.
 
 The language selector is in the top-right of the navigation bar.
+
+## Latest update
+- BMI unit selector now changes height input only; weight remains kg in both modes.
+- The supplied Universe Fitness Zone logo and membership-fee photo are embedded in index.html so they do not disappear when assets are not re-uploaded.
